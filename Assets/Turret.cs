@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using System.Xml.Serialization;
-using Unity.VisualScripting.Dependencies.Sqlite;
 
 public class Turret : MonoBehaviour
 {
@@ -16,72 +14,65 @@ public class Turret : MonoBehaviour
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float rotationSpeed = 5f;
-    [SerializeField] private float bps = 1f; //Bullete Per Second
-
-
+    [SerializeField] private float bps = 1f; // Bullets Per Second
 
     private Transform target;
     private float timeUntilFire;
-
 
     private void Update()
     {
         if (target == null)
         {
-
             FindTarget();
             return;
         }
 
         RotateTowardsTarget();
 
-        if (CheckTargetIsInRange()) {
-            target = null;
+        if (!CheckTargetIsInRange())
+        {
+            target = null; // Target is out of range
         }
         else
         {
             timeUntilFire += Time.deltaTime;
 
-            if (timeUntilFire >= 1f / bps) {
-
+            if (timeUntilFire >= 1f / bps)
+            {
                 Shoot();
-
+                timeUntilFire = 0f; // Reset the timer after shooting
             }
         }
     }
 
-    private void Shoot() {
-
+    private void Shoot()
+    {
         GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
-        Bullet bulletScript = bulletObj. GetComponent<Bullet>();
+        Bullet bulletScript = bulletObj.GetComponent<Bullet>();
         bulletScript.SetTarget(target);
-       
     }
 
     private void FindTarget()
     {
-        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, (Vector2)
-            transform.position, 0f, enemyMask);
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, Vector2.zero, 0f, enemyMask);
 
-        if (hits.Length > 0) {
-
+        if (hits.Length > 0)
+        {
             target = hits[0].transform;
+            Shoot(); // Shoot immediately upon acquiring a target
         }
     }
 
-    private bool CheckTargetIsInRange() {
-
-        return Vector2.Distance(target.position, transform.position) <= targetingRange;
-
+    private bool CheckTargetIsInRange()
+    {
+        return target != null && Vector2.Distance(target.position, transform.position) <= targetingRange;
     }
 
-    private void RotateTowardsTarget() { 
-        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x -
-            transform.position.x) * Mathf.Rad2Deg + -90f;
-
+    private void RotateTowardsTarget()
+    {
+        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-        turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, 
-            targetRotation, rotationSpeed * Time.deltaTime);
+        turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 
     private void OnDrawGizmosSelected()
