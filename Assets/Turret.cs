@@ -37,6 +37,7 @@ public class Turret : MonoBehaviour
         {
             timeUntilFire += Time.deltaTime;
 
+            // Only shoot if the cooldown has passed
             if (timeUntilFire >= 1f / bps)
             {
                 Shoot();
@@ -59,7 +60,7 @@ public class Turret : MonoBehaviour
         if (hits.Length > 0)
         {
             target = hits[0].transform;
-            Shoot(); // Shoot immediately upon acquiring a target
+            // No immediate shooting; rely on the Update loop to handle shooting
         }
     }
 
@@ -81,3 +82,5 @@ public class Turret : MonoBehaviour
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
     }
 }
+
+
