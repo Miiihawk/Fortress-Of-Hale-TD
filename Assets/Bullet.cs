@@ -29,6 +29,8 @@ public class Bullet : MonoBehaviour
 
         Vector2 direction = (target.position - transform.position).normalized;
 
+        transform.up = -direction;
+
         rb.velocity = direction * bulletSpeed;
 
     }

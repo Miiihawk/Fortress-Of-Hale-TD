@@ -8,7 +8,7 @@ public class Turret : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform turretRotationPoint;
     [SerializeField] private LayerMask enemyMask;
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private GameObject[] bulletPrefabs;
     [SerializeField] private Transform firingPoint;
 
     [Header("Attribute")]
@@ -46,9 +46,19 @@ public class Turret : MonoBehaviour
         }
     }
 
+    //private void Shoot()
+    //{
+    //    GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+    //    Bullet bulletScript = bulletObj.GetComponent<Bullet>();
+    //    bulletScript.SetTarget(target);
+    //}
+
+
     private void Shoot()
     {
-        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+        // Randomly select a bullet prefab from the array
+        int randomIndex = Random.Range(0, bulletPrefabs.Length);
+        GameObject bulletObj = Instantiate(bulletPrefabs[randomIndex], firingPoint.position, Quaternion.identity);
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
         bulletScript.SetTarget(target);
     }
@@ -71,7 +81,7 @@ public class Turret : MonoBehaviour
 
     private void RotateTowardsTarget()
     {
-        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
+        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg + 90f;
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
         turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
