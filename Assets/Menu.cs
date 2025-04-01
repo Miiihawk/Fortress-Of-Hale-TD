@@ -12,4 +12,8 @@ public class Menu : MonoBehaviour
     {
         currencyGUI.text = "$" + levelmanager.main.currency.ToString();
     }
+
+    public void SetSelected() { 
+
+    }
 }
