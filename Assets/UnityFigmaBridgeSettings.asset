@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 119c1bd3601648f28a252a6030e067b6, type: 3}
+  m_Script: {fileID: 0}
   m_Name: UnityFigmaBridgeSettings
   m_EditorClassIdentifier: 
   DocumentUrl: https://www.figma.com/design/PM0tKf9xBUuT1WvfvVEr5m/Game-UI-%23001-(Community)?node-id=202-303&t=0gXsdDjE6CT2Q9SS-0
   BuildPrototypeFlow: 1
-  RunTimeAssetsScenePath: 
+  RunTimeAssetsScenePath: Assets/Scenes/New Scene.unity
   EnableAutoLayout: 0
   ScreenBindingNamespace: 
   ServerRenderImageScale: 3
