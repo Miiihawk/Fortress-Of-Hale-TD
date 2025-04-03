@@ -12973,6 +12973,7 @@ PrefabInstance:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     - target: {fileID: 2452954821959789824, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -12993,6 +12994,7 @@ PrefabInstance:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -13089,6 +13091,8 @@ PrefabInstance:
 =======
       value: -129
 >>>>>>> Stashed changes
+=======
+      value: -129
 >>>>>>> Stashed changes
 =======
       value: -129
