@@ -97,7 +97,7 @@ public class EnemySpawner : MonoBehaviour
     private float EnemiesPerSecond()
     {
 
-        return Mathf.Clamp(Mathf.RoundToInt(enemiesPerSecond * Mathf.Pow(currentWave, difficultyScalingFactor)), 0f, enemiesPerSecondCap);
+        return Mathf.Clamp(enemiesPerSecond * Mathf.Pow(currentWave, difficultyScalingFactor), 0f, enemiesPerSecondCap);
 
     }
 
