@@ -12463,6 +12463,7 @@ PrefabInstance:
     m_Modifications:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - target: {fileID: 596402185352950256, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -24.3
@@ -12967,6 +12968,7 @@ PrefabInstance:
 =======
 =======
 >>>>>>> Stashed changes
+>>>>>>> Stashed changes
     - target: {fileID: 2452954821959789824, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1499
@@ -12983,6 +12985,7 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 208.76
 <<<<<<< Updated upstream
+>>>>>>> Stashed changes
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
