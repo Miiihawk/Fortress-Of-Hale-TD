@@ -12462,6 +12462,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - target: {fileID: 596402185352950256, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -24.3
@@ -12964,6 +12965,8 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.7764706
 =======
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 2452954821959789824, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1499
@@ -12979,6 +12982,9 @@ PrefabInstance:
     - target: {fileID: 6006058473315823514, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
       propertyPath: m_SizeDelta.y
       value: 208.76
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6006058473315823514, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
@@ -12987,6 +12993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6006058473315823514, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
       propertyPath: m_AnchoredPosition.y
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       value: -138
       objectReference: {fileID: 0}
@@ -13057,6 +13064,9 @@ PrefabInstance:
     - target: {fileID: 7681207892283872489, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
       propertyPath: m_Name
       value: Title
+=======
+      value: -129
+>>>>>>> Stashed changes
 =======
       value: -129
 >>>>>>> Stashed changes
