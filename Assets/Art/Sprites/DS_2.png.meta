@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3dfcec748dc4b4e41a4eb2c2e6fe8fea
+guid: c5ba855f19bbcdc4180ae2fbc8d44f3f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,22 +93,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Overhead_0
+      name: DS_2_0
       rect:
         serializedVersion: 2
-        x: 299
-        y: 810
-        width: 883
-        height: 1030
-      alignment: 9
-      pivot: {x: 0.5218306, y: 0.36470082}
+        x: 554
+        y: 994
+        width: 499
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a6e6c5ec30e91642a8a50bf93bc9834
-      internalID: -647801009
+      spriteID: 4f434f8b72d25d842817de250d1842d9
+      internalID: 1571970673
       vertices: []
       indices: 
       edges: []
@@ -124,7 +124,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Overhead_0: -647801009
+      DS_2_0: 1571970673
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

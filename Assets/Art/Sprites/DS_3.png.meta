@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 43d49b327aea35e4f9c8276b195fee54
+guid: c31517f46bf07684e9404820e45c115a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 2
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,22 +93,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0998_0
+      name: IMG_1019_0
       rect:
         serializedVersion: 2
-        x: 309
-        y: 778
-        width: 889
-        height: 1151
+        x: 656
+        y: 666
+        width: 343
+        height: 315
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5db2c44a0bfa8654d9e731fecbffb638
-      internalID: 2015452684
+      spriteID: 69a4fb07d174dac42b55cfdf7f05f7a0
+      internalID: -1336531738
       vertices: []
       indices: 
       edges: []
@@ -124,7 +124,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IMG_0998_0: 2015452684
+      IMG_1019_0: -1336531738
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

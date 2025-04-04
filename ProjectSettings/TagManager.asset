@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Enemy
   - bullet
-  - 
+  - map
   - 
   - 
   - 
@@ -43,4 +43,7 @@ TagManager:
     locked: 0
   - name: turrets
     uniqueID: 2809888703
+    locked: 0
+  - name: Map
+    uniqueID: 1404578623
     locked: 0
