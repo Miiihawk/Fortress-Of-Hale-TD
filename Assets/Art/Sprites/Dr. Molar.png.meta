@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 43d49b327aea35e4f9c8276b195fee54
+guid: c9473ea92820a884f957c9df729d513c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,22 +93,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0998_0
+      name: Dr. Molar_0
       rect:
         serializedVersion: 2
-        x: 418
-        y: 888
-        width: 698
-        height: 904
-      alignment: 9
-      pivot: {x: 0.5343199, y: 0.46029148}
+        x: 423
+        y: 892
+        width: 681
+        height: 899
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5db2c44a0bfa8654d9e731fecbffb638
-      internalID: 2015452684
+      spriteID: 7a942f0bd5e3cfb479e4127b8643521a
+      internalID: 342158925
       vertices: []
       indices: 
       edges: []
@@ -124,7 +124,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IMG_0998_0: 2015452684
+      Dr. Molar_0: 342158925
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

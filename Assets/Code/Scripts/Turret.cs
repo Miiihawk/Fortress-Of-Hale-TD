@@ -16,8 +16,11 @@ public class Turret : MonoBehaviour
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float bps = 1f; // Bullets Per Second
 
-    private Transform target;
+
     private float timeUntilFire;
+
+    private Transform target;
+    
 
     private void Update()
     {
