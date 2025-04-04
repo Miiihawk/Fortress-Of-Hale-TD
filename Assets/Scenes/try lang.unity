@@ -6624,14 +6624,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2452954821959789824, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1499
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452954821959789824, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 503
-      objectReference: {fileID: 0}
     - target: {fileID: 8713971388478101778, guid: dbd5b3188c32c00478d6c728294269c3, type: 3}
       propertyPath: m_Name
       value: Game GUI
