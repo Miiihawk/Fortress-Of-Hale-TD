@@ -87,7 +87,7 @@ MonoBehaviour:
   - {fileID: 6986903683271748926, guid: f9f276a65f6388d409dd15c01acc5654, type: 3}
   - {fileID: 3070414102656551009, guid: fb3e243b49f73cb4d9e3793a3ac2eccf, type: 3}
   firingPoint: {fileID: 5542761418684745666}
-  targetingRange: 2
+  targetingRange: 3
   rotationSpeed: 100
   bps: 1
 --- !u!1 &8149769958472158641
@@ -192,7 +192,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1485078593
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -647801009, guid: 3dfcec748dc4b4e41a4eb2c2e6fe8fea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

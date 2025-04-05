@@ -2120,6 +2120,7 @@ GameObject:
   - component: {fileID: 313695381}
   - component: {fileID: 313695382}
   - component: {fileID: 313695383}
+  - component: {fileID: 313695384}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -2239,6 +2240,20 @@ MonoBehaviour:
   hasWon: 0
   winPanel: {fileID: 0}
   losePanel: {fileID: 0}
+--- !u!114 &313695384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313695377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af80dae5ec66c4a4db3c15a450c98216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startButton: {fileID: 2008199556}
+  enemySpawner: {fileID: 313695378}
 --- !u!1001 &316591968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6752,26 +6767,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6399413017642437899, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
-      propertyPath: m_Colors.m_HighlightedColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399413017642437899, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
-      propertyPath: m_Colors.m_HighlightedColor.g
-      value: 0.007843138
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399413017642437899, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
-      propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.5647059
-      objectReference: {fileID: 0}
-    - target: {fileID: 8039004033357360213, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -156.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8039004033357360213, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -287.34
-      objectReference: {fileID: 0}
+    - target: {fileID: 8077281891222724840, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 313695382}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
 --- !u!1 &1169995049
@@ -12435,6 +12434,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7489196095031120605, guid: a1bd6db67ea98d448b4565806c8b48b9, type: 3}
   m_PrefabInstance: {fileID: 1974033546}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2008199556 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6692413437021180002, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
+  m_PrefabInstance: {fileID: 1151032133}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2009222556
 PrefabInstance:
   m_ObjectHideFlags: 0
