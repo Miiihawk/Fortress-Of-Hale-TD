@@ -41,20 +41,20 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        if (!isSpawning) return;
+        if (!isSpawning || GameManager.main.hasWon) return; // Prevent spawning if game is won
 
         timesSinceLastSpawn += Time.deltaTime;
 
-        if (timesSinceLastSpawn >= (1f / eps) && enemiesLeftToSpawn > 0) {
-
+        if (timesSinceLastSpawn >= (1f / eps) && enemiesLeftToSpawn > 0)
+        {
             SpawnEnemy();
             enemiesLeftToSpawn--;
             enemiesAlive++;
             timesSinceLastSpawn = 0f;
         }
 
-        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0) {
-
+        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0)
+        {
             EndWave();
         }
     }
@@ -69,6 +69,7 @@ public class EnemySpawner : MonoBehaviour
         yield return new WaitForSeconds(timeBetweenWaves);
         isSpawning = true; 
         enemiesLeftToSpawn = EnemiesPerWave();
+        GameManager.main.CheckWinCondition();
         eps = EnemiesPerSecond();
     }
 

@@ -8,6 +8,9 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int maxHealth = 100;
     private int currentHealth;
 
+    public delegate void OnPlayerDeath();
+    public event OnPlayerDeath PlayerDied;
+
     private void Start()
     {
         ResetPlayerHealth();
@@ -30,7 +33,8 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player has died!");
-        // Implement game over logic here
+        PlayerDied?.Invoke(); // Notify GameManager of player death
+        GameManager.main.ShowLosePanel(); // Call the lose panel method
     }
 
     public int GetCurrentHealth()
