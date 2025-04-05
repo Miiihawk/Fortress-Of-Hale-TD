@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -24.84919, z: 222.5164, w: -30.497164}
+  m_margin: {x: 0, y: -24.84919, z: 0.23430629, w: -30.497164}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2342,6 +2342,7 @@ GameObject:
   - component: {fileID: 6399413016555155894}
   - component: {fileID: 6399413016555155880}
   - component: {fileID: 6399413016555155895}
+  - component: {fileID: 8077281891222724840}
   m_Layer: 5
   m_Name: Dark Menu
   m_TagString: Untagged
@@ -2417,6 +2418,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 20
+--- !u!114 &8077281891222724840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6399413016555155893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c0c9999e64f534a908acbe36a0729e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currencyGUI: {fileID: 6399413015908479446}
+  HealthGUI: {fileID: 6399413016363158332}
+  playerHealth: {fileID: 0}
 --- !u!1 &6399413016580532020
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,7 +3613,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3782,7 +3798,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
