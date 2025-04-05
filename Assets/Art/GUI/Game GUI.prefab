@@ -992,7 +992,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1499, y: 503}
+  m_AnchoredPosition: {x: -1500, y: 498.1}
   m_SizeDelta: {x: 409.88794, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2766219630525003147
@@ -2258,7 +2258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 214.8399, y: 0}
+  m_AnchoredPosition: {x: 234.6, y: 0.5}
   m_SizeDelta: {x: 278.2079, y: 56.7771}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5188167355862434776
@@ -2289,7 +2289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2323,7 +2323,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2352,7 +2352,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -24.84919, z: 222.5164, w: -30.497164}
+  m_margin: {x: 0, y: -24.84919, z: 151.21324, w: -30.497164}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2481,7 +2481,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2631971524724830321}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
+        m_MethodName: SetSelectedTower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5851334610875573488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3373,7 +3385,7 @@ GameObject:
   - component: {fileID: 8713971388607930030}
   - component: {fileID: 8713971388607930028}
   - component: {fileID: 8713971388607930029}
-  - component: {fileID: 7032219127109011270}
+  - component: {fileID: 5203881573329775097}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -3441,7 +3453,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7032219127109011270
+--- !u!114 &5203881573329775097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3450,10 +3462,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8713971388607930031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa318c3b3cc5fe145a6dc1c2c1cf1165, type: 3}
+  m_Script: {fileID: 11500000, guid: 67c0c9999e64f534a908acbe36a0729e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currencyGUI: {fileID: 8713971389586033024}
+  HealthGUI: {fileID: 2303561065746952899}
+  playerHealth: {fileID: 0}
 --- !u!1 &8713971388814810086
 GameObject:
   m_ObjectHideFlags: 0
@@ -3670,7 +3684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 183, y: 0.000026415}
+  m_AnchoredPosition: {x: 213.8, y: 4}
   m_SizeDelta: {x: 278.2079, y: 56.7771}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8713971389586033039
@@ -3701,7 +3715,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: $100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3735,7 +3749,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
