@@ -6767,6 +6767,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6399413016211498809, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 313695381}
+    - target: {fileID: 6399413017227798731, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 313695381}
+    - target: {fileID: 6399413017265544196, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 313695381}
     - target: {fileID: 8077281891222724840, guid: a759419b83a41514e8e6fa52974db6b7, type: 3}
       propertyPath: playerHealth
       value: 

@@ -6,6 +6,48 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: f323c1bfee2424f4fb78aced86f79a5a
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro1.unity
+    guid: c9f1bcce8aae08842840dd2f2326d450
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro2.unity
+    guid: 3d03a3e64c8f4e943bf62135213e3591
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro3.unity
+    guid: 6e914cec6323f2b4fa73c4e6e6d46507
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro4.unity
+    guid: 005a3c9c5f7eba2488db1977e1601632
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro5.unity
+    guid: cc999820b9836914e994ff9ee796b539
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro6.unity
+    guid: 9e30f7e3ac90b0648b41fc4b29aa6ea8
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro7.unity
+    guid: b859c85fe4c189d43ba573d8499982f4
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro8.unity
+    guid: db6c0c04a29ae894bae41e818fa2a8b2
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro9.unity
+    guid: 8f03c06ae7f9de945b80c992e38e4299
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro10.unity
+    guid: 8f6a51357399a9646ba3e1e6fd33111e
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro11.unity
+    guid: 162b1de911aa9354186f5f456e2016a3
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro12.unity
+    guid: 0e99e5470b064144b8f278482035e28f
+  - enabled: 1
+    path: Assets/Scenes/prologue/pro13.unity
+    guid: 28b7f8fae978567419c252781b4cadd2
+  - enabled: 1
     path: Assets/Scenes/First Level.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: b21938ed54c8db04a9cbb0256f89d75e
   m_configObjects: {}
