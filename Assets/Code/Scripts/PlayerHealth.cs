@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
 
     public delegate void OnPlayerDeath();
-    public event OnPlayerDeath PlayerDied;
+    
 
     private void Start()
     {
@@ -33,8 +34,9 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player has died!");
-        PlayerDied?.Invoke(); // Notify GameManager of player death
-        GameManager.main.ShowLosePanel(); // Call the lose panel method
+        SceneManager.LoadScene(15);
+
+
     }
 
     public int GetCurrentHealth()

@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 
 public class EnemySpawner : MonoBehaviour
@@ -41,7 +43,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        if (!isSpawning || GameManager.main.hasWon) return; // Prevent spawning if game is won
+        if (!isSpawning) return; // Prevent spawning if game is won
 
         timesSinceLastSpawn += Time.deltaTime;
 
@@ -69,7 +71,6 @@ public class EnemySpawner : MonoBehaviour
         yield return new WaitForSeconds(timeBetweenWaves);
         isSpawning = true; 
         enemiesLeftToSpawn = EnemiesPerWave();
-        GameManager.main.CheckWinCondition();
         eps = EnemiesPerSecond();
     }
 
@@ -77,9 +78,23 @@ public class EnemySpawner : MonoBehaviour
         
         isSpawning = false;
         timesSinceLastSpawn = 0f;
+
+        if (currentWave >= 1)
+        {
+            WinGame();
+            return;
+        }
+
         currentWave++;
         StartCoroutine(StartWave());
 
+    }
+
+    private void WinGame() 
+    {
+        Debug.Log("You have defeated wave 20! You win!");
+        
+        SceneManager.LoadScene(15);
     }
 
     private void SpawnEnemy() {
