@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/First Level.unity
     guid: b21938ed54c8db04a9cbb0256f89d75e
+  - enabled: 1
+    path: Assets/Scenes/Lratio/BadEnd1.unity
+    guid: bd4d848e9d941844a864c9cfab623302
   m_configObjects: {}

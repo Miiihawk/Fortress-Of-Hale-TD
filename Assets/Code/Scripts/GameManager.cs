@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject winPanel; // Assign in the inspector
     public GameObject losePanel; // Assign in the inspector
 
-    
+
 
     private void Awake()
     {
@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     {
         losePanel.SetActive(true);
         Time.timeScale = 0; // Pause the game
-        SceneManager.LoadScene("LoseScene"); // Load the lose scene
+        SceneManager.LoadScene(15); // Load the lose scene
     }
 
     public void RestartLevel()
