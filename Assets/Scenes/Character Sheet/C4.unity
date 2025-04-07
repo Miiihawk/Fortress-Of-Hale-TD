@@ -373,9 +373,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: pro1, Assembly-CSharp
-        m_MethodName: PlayPro2
+      - m_Target: {fileID: 1027902914}
+        m_TargetAssemblyTypeName: CH4, Assembly-CSharp
+        m_MethodName: PlayBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -639,6 +639,7 @@ GameObject:
   - component: {fileID: 1027902913}
   - component: {fileID: 1027902912}
   - component: {fileID: 1027902911}
+  - component: {fileID: 1027902914}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -712,6 +713,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1027902914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027902910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15bd2c66d94b9943b5c44ed1b34f826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1061545038
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +840,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1061545043}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1027902914}
+        m_TargetAssemblyTypeName: CH4, Assembly-CSharp
+        m_MethodName: PlayRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1061545043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1297,7 +1322,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2112073060}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1027902914}
+        m_TargetAssemblyTypeName: CH4, Assembly-CSharp
+        m_MethodName: PlayLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2112073060
 MonoBehaviour:
   m_ObjectHideFlags: 0

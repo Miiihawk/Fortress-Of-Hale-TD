@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class CH2 : MonoBehaviour
 {
-    public void PlayPro()
+    public void PlayBack()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(0);
     }
-    public void PlayMedics()
+    public void PlayLeft()
     {
         SceneManager.LoadSceneAsync(35);
     }
-
-    public void QuitGame() 
+    public void PlayRight()
     {
-        Application.Quit();
+        SceneManager.LoadSceneAsync(37);
     }
-
 }
