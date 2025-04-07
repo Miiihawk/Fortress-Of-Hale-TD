@@ -1225,7 +1225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 60, y: -288}
+  m_AnchoredPosition: {x: 50, y: -240}
   m_SizeDelta: {x: 573.6945, y: 250.4662}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &6342062223284004404
@@ -1258,8 +1258,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Fortress \nof Hale"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e6a81f8d55a6e364e8a4f04685be4e61, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: e6a81f8d55a6e364e8a4f04685be4e61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
