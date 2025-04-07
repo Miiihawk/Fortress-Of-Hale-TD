@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 public class Turret : MonoBehaviour
 {
     [Header("References")]
@@ -83,8 +87,10 @@ public class Turret : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+#if UNITY_EDITOR
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
+#endif
     }
 }
 

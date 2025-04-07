@@ -11,7 +11,7 @@ public class levelmanager : MonoBehaviour
 
     public int currency;
     private void Awake()
-    {
+    { 
         main = this;
     }
 

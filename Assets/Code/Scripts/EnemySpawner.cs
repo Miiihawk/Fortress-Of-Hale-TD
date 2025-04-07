@@ -118,4 +118,14 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
+    public int GetCurrentWave()
+    {
+        return currentWave;
+    }
+
+    public float GetCurrentWaveToWin()
+    {
+        return wavesToWin;
+    }
+
 }

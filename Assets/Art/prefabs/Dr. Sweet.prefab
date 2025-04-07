@@ -288,5 +288,5 @@ MonoBehaviour:
   - {fileID: 6986903683271748926, guid: 9aade2bbe8400dc42bbcc6c77519eab1, type: 3}
   firingPoint: {fileID: 2259501730756611616}
   targetingRange: 3
-  rotationSpeed: 50
+  rotationSpeed: 100
   bps: 3
