@@ -18,6 +18,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
     [SerializeField] private float enemiesPerSecondCap = 15f;
+    [SerializeField] private float wavesToWin = 20f;
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
@@ -79,7 +80,7 @@ public class EnemySpawner : MonoBehaviour
         isSpawning = false;
         timesSinceLastSpawn = 0f;
 
-        if (currentWave >= 1)
+        if (currentWave >= wavesToWin)
         {
             WinGame();
             return;

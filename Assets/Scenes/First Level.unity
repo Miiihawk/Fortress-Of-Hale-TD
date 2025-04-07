@@ -2068,6 +2068,7 @@ MonoBehaviour:
   timeBetweenWaves: 2.5
   difficultyScalingFactor: 0.75
   enemiesPerSecondCap: 15
+  wavesToWin: 1
 --- !u!114 &313695379
 MonoBehaviour:
   m_ObjectHideFlags: 0
