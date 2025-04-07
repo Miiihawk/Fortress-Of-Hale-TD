@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pro13 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void PlayChpt1()
     {
-        
+        SceneManager.LoadSceneAsync(14);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayHome()
     {
-        
+        SceneManager.LoadSceneAsync(0);
     }
 }
