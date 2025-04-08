@@ -322,6 +322,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5644522699816944763, guid: 4d33c517ac86fa44697ba0d77177f6f5, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644522699816944763, guid: 4d33c517ac86fa44697ba0d77177f6f5, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644522699816944763, guid: 4d33c517ac86fa44697ba0d77177f6f5, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5644522699936620618, guid: 4d33c517ac86fa44697ba0d77177f6f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -349,6 +361,18 @@ PrefabInstance:
     - target: {fileID: 5644522699936620618, guid: 4d33c517ac86fa44697ba0d77177f6f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644522699991895474, guid: 4d33c517ac86fa44697ba0d77177f6f5, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644522699991895474, guid: 4d33c517ac86fa44697ba0d77177f6f5, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644522699991895474, guid: 4d33c517ac86fa44697ba0d77177f6f5, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5644522700302433088, guid: 4d33c517ac86fa44697ba0d77177f6f5, type: 3}
       propertyPath: m_Name
