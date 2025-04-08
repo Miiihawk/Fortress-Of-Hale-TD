@@ -2196,7 +2196,7 @@ MonoBehaviour:
   timeBetweenWaves: 2.5
   difficultyScalingFactor: 0.75
   enemiesPerSecondCap: 15
-  wavesToWin: 1
+  wavesToWin: 15
 --- !u!114 &313695379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2272,7 +2272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f2ff38a261c5554faeb5d26f4af7590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 100
 --- !u!114 &313695384
 MonoBehaviour:
   m_ObjectHideFlags: 0
