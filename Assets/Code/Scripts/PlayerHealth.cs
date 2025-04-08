@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player has died!");
-        SceneManager.LoadScene(15);
+        SceneManager.LoadScene(33);
 
 
     }

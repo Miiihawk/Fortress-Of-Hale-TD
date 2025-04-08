@@ -128,4 +128,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Character Sheet/C6.unity
     guid: 22af7d5f0b4c88d448deedffd32ef77c
+  - enabled: 1
+    path: Assets/Scenes/WinCon/Complete.unity
+    guid: 54d046ae1987f2e4496fb8767602540a
+  - enabled: 1
+    path: Assets/Scenes/WinCon/Black.unity
+    guid: be53e44935479bf45aac3bd6205ac6d9
   m_configObjects: {}

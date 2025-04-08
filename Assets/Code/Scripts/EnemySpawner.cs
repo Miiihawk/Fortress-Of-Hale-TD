@@ -95,7 +95,7 @@ public class EnemySpawner : MonoBehaviour
     {
         Debug.Log("You have defeated wave 20! You win!");
         
-        SceneManager.LoadScene(19);
+        SceneManager.LoadScene(41);
     }
 
     private void SpawnEnemy() {
